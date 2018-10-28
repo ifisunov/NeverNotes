@@ -1,0 +1,455 @@
+﻿html, body {
+
+padding:0px;
+margin:0px;
+height:100%;
+width: 100%; 
+background-color: #808080;
+color: #464646;
+font-size: 100%;
+display:table;
+overflow:hidden;
+letter-spacing: 1px;
+word-spacing: 4px;
+
+
+}
+
+h1, h2, h3, h4 {
+    margin:0;
+    padding:10px;
+}
+
+p {
+    font-size: 11pt;
+}
+
+hr.light { 
+    width:90%; 
+    border-top:1px solid #b5b5b5; 
+}
+
+hr.light2 { 
+    width:95%; 
+    border-top:1px solid #b5b5b5; 
+}
+
+hr.light3 { 
+    width:70%; 
+    border-top:1px solid #c4c4c4; 
+}
+
+hr.light4 { 
+    width:90%; 
+    border-top:1px solid #cecece; 
+}
+
+/*-----------------------*/
+/*обертка для 3х столбцов*/
+.wrap{
+display:table-cell;
+width:100%;
+height:100%;
+position:fixed;
+overflow:hidden;
+
+}
+
+/*-------------------------------*/
+/* Стили колонки управления слева*/
+#col-work-panel {
+    width:70px;
+    height:100%;
+    float:left;
+    overflow:hidden;
+    /*background: -moz-linear-gradient(left,  #c88703 0%, #d29a02 36%, #fbda03 100%); 
+    background: -webkit-gradient(linear, left right, left left, color-stop(0%,#c88703), color-stop(36%,#d29a02), color-stop(100%,#fbda03)); 
+    background: -webkit-linear-gradient(left,  #c88703 0%,#d29a02 36%,#fbda03 100%); 
+    background: -o-linear-gradient(left,  #c88703 0%,#d29a02 36%,#fbda03 100%); 
+    background: -ms-linear-gradient(left,  #c88703 0%,#d29a02 36%,#fbda03 100%); 
+    background: linear-gradient(to left,  #c88703 0%,#d29a02 36%,#fbda03 100%); */
+    
+    background: linear-gradient(to left,  #d4d4d4 0%, #e1e1e1 50%, #d4d4d4 100%); 
+}
+
+/*---------------------------------------------*/
+/* Стили колонки с отображением списка заметок */
+#col-note-list {
+    background:#fefefe;
+    width:310px;
+    height:100%;
+    /*border: 1px solid #cbcbcb;*/
+    float:left;
+    box-shadow: 0px 1px 5px 1px #969696;
+    position:fixed;
+    margin-left:71px;
+    /*background: #2b2b2b;*/
+    /*display:none;*/
+    /*z-index:500;*/
+}
+#col-note-list-upper-block {
+    /*border: 1px solid #fefefe;*/
+    border-bottom: 1px solid #b7b7b7;
+    height: 100px;
+    /*color:snow;*/
+    /*box-shadow: 0px 1px 5px 2px #969696;*/
+    /*background: linear-gradient(to top,  #2e2e2e 0%,#3d3d3d 30%,#878787 100%);*/
+    background: linear-gradient(to left,  #4a4a4a 0%, #7c7c7c 30%, #4a4a4a 100%);
+    background:#fafafa;
+}
+#col-note-list-bottom-block {
+    overflow-x:hidden;
+    overflow-y: auto;
+    height: calc(100% - 101px);
+    margin-top: 0px;
+    width:310px;
+    /*padding-left:10px;*/
+    /*background: #2b2b2b;*/
+    background-color:antiquewhite;
+    background: #fefefe;
+}
+#col-note-list-item {
+    /*background:#fefefe;*/
+    border-bottom: 1px solid #e2e2e2;
+    height:80px;
+    padding: 8px;
+    /*background-color:antiquewhite;*/
+    /*color:snow;
+    background: #2b2b2b;*/
+    background: #fefefe;
+    overflow-x:hidden;
+    white-space: nowrap;
+    color:#585858;
+}
+#col-note-list-item:hover {
+    color: #161616;
+    background: #ffac00;
+}
+#col-note-list-item:hover .col-note-title-length{
+    color: #161616;
+    background: #ffac00;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0) 0%, #ffac00 50%);
+}
+/* Костыль плавного затухания названия заметки если оно выходит за границу блока списка заметок */
+.col-note-title-length {
+    position:relative;
+    margin-top:-55px;
+    margin-left:270px;
+    width:35px;
+    height:40px;
+    background-color:red;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 50%);
+}
+
+
+
+/*---------------------------------------------*/
+/* Стили колонки редактирования заметки */
+#col-note-edit {
+    border: 0px ;
+    margin-left: 380px;
+    background: #fefefe;
+    width: calc(100% - 381px);
+    height:100%;
+    /*color:snow;
+    background: #2b2b2b;*/
+}
+.col-note-edit-upper-block {
+    border: 1px solid #eaeaea;
+    height: 100px;
+    white-space:nowrap;
+    /*background: -moz-linear-gradient(left,  #c88703 0%, #d29a02 36%, #fbda03 100%); 
+    background: -webkit-gradient(linear, left right, left left, color-stop(0%,#c88703), color-stop(36%,#d29a02), color-stop(100%,#fbda03)); 
+    background: -webkit-linear-gradient(left,  #c88703 0%,#d29a02 36%,#fbda03 100%); 
+    background: -o-linear-gradient(left,  #c88703 0%,#d29a02 36%,#fbda03 100%); 
+    background: -ms-linear-gradient(left,  #c88703 0%,#d29a02 36%,#fbda03 100%);*/ 
+    /*background: linear-gradient(to top,  #242424 0%,#3d3d3d 30%,#878787 100%);*/ 
+    background: linear-gradient(to left,  #4a4a4a 0%, #7c7c7c 30%, #4a4a4a 100%);
+    background:#fafafa;
+}
+#col-note-edit-area {
+    /*border: 1px solid #eaeaea;*/
+    height: calc(100% - 101px);
+    padding: 10px;
+    overflow:auto;
+    background-color:#fff8ed;
+    /*white-space:normal;*/
+    background:#fefefe;
+}
+.note-title {
+    font-weight:600;
+    color:#ff9600;
+    
+}
+.note-body {
+    padding: 10px;
+}
+
+
+/*------------------------------*/
+/*стиль иконки без фокуса мышки */
+/*и стиль иконки с фокусом мышки*/
+.icon-work-panel {
+    width:50px;
+    height:50px;
+       
+    display: inline-block;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-property: transform;
+            transition-property: transform;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.icon-work-panel:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+}
+/* Стили иконок + и блокноты */
+.icon-left-set {
+    display:none;
+    font-size:40px;
+    cursor:pointer;
+    color:#828282;
+    
+    display: inline-block;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-property: transform;
+            transition-property: transform;
+    /*-webkit-transform: translateZ(0);
+            transform: translateZ(0);*/
+    /*box-shadow: 0 0 1px rgba(0, 0, 0, 0);*/
+}
+.icon-left-set:hover {
+    color: #ff9600;
+    cursor:pointer;
+
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+}
+/* Стили иконок сортировки и поиска */
+.icon-left-set2 {
+    display:none;
+    font-size:25px;
+    cursor:pointer;
+    color:#828282;
+}
+.icon-left-set2:hover {
+    color: #ff9600;
+    cursor:pointer;
+}
+
+/*----------------------------------*/
+/*Стиль для выезжающего окна account*/
+#account-window {
+    position: absolute;
+    left: 71px;
+    top: 20px;
+    display: none;
+    width: 280px;
+    height: 200px;
+    background: #ffffff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px #969696;
+    z-index:1000;
+}
+
+/*----------------------------------------*/
+/*Стили для меню в выезжающем окне account*/
+.account-menu-btn {
+    width: 90%;
+    border: 0px;
+    background: #fff;
+}
+.account-menu-btn:hover {
+    width: 90%;
+    border: 0px;
+    background: #ff9600;
+}
+
+/*--------------------------------------------------------------*/
+/*Затемнение рабочей области при вызове окон удаления и аккаунта*/
+.mask {
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:100;
+    background-color:#adadad;
+    display:none;
+    width: 100%;
+    height: 100%;
+    cursor:default;
+    opacity:0.3;
+    }
+
+/*-------------------*/
+/*Стили окна удаления*/
+.delete-window {
+    cursor:default;
+    position: absolute;
+    right: 40px;
+    top: 90px;
+    display: none;
+    width: 280px;
+    height: 210px;
+    background: #fcfcfc;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px #969696;
+    z-index:1000;
+}
+/*Стили кнопок в окне удаления заметки*/
+.my-btn { 
+    font-size:18px;
+    border-radius: 3px;
+    border:2px;
+    box-shadow: 1px 0px 2px 1px #969696;
+}
+
+/*----------------------------------*/
+/*Стили иконок для работы с заметкой*/
+.trash {
+    font-size:30px;
+    margin-right:30px;
+    float:right;
+    cursor:pointer;
+    color:#898989;
+    animation:none;
+}
+.trash:hover {
+    color: #ff9600;
+    -webkit-animation: swing 0.6s ease;
+    animation: swing 0.6s ease;
+    -webkit-animation-iteration-count: 100;
+    animation-iteration-count: 100;
+}
+.icon-set {
+    margin-left:20px;
+    margin-top:28px;
+    font-size:30px;
+    color:#898989;
+    padding:0px;
+    /*padding-left:20px;*/
+}
+.icon-set:hover {
+    color: #ff9600;
+    cursor:pointer;
+}
+
+#sort-list {
+    text-decoration:none;
+    border: 0px;
+    background-color:transparent;
+}
+
+/*--------------------*/
+/* Переопределение некоторых стилей Bootstrap */
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  vertical-align: middle;
+  border-top: 6px solid #515151;
+  border-right: 4px solid transparent;
+  border-bottom: 0 dotted;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+.dropdown-menu {
+   margin-top: 0px;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ff9600;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ff9600;
+  outline: 0;
+}
+
+
+#add-folder-icon {
+    /*margin-left:20px;
+    margin-top:28px;
+    font-size:30px;*/
+    /*color:#898989;*/
+    padding:0px;
+    /*padding-left:20px;*/
+}
+#add-folder-icon:hover {
+    color: #ff9600;
+    cursor:pointer;
+}
+
+.folder-bottom-block {
+    height: calc(100% - 20px);
+}
+
+
+
+
+/***********************/
+/* Для анимации тряски */
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  30% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  40% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  50% {
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px);
+  }
+  65% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  30% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  40% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  50% {
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px);
+  }
+  65% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

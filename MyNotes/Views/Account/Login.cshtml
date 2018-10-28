@@ -1,0 +1,139 @@
+﻿@using MyNotes.Models
+@model LoginViewModel
+@{
+    Layout = null;
+    ViewBag.Title = "My Notes";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/LogRegPage.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    @Scripts.Render("~/bundles/jquery")
+    <script>
+        $(document).ready(function () {
+            $("#child").fadeIn("slow");
+        });
+    </script>
+</head>
+
+<body>
+    
+    <div id="parent">
+        <div id="child" style="display: none">
+            <h2>ВХОД В СИСТЕМУ</h2>
+            
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                <hr/>
+                @Html.ValidationSummary(true, "", new { @class = "text-danger text-left", @style = "font-size: 11pt" })
+
+                <div class="form-group text-left">
+                    <p>Введите e-mail</p>
+                    @*@Html.LabelFor(m => m.Email, new { @class = "control-label" })*@
+                    <div class="">
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "E-mail" })
+                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger", @style="font-size: 11pt" })
+                    </div>
+                </div>
+                <div class="form-group text-left">
+                    <p>Пароль</p>
+                    @*@Html.LabelFor(m => m.Password, new { @class = "control-label" })*@
+                    <div class="">
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Пароль" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger", @style = "font-size: 11pt" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="text-left">
+                        <div class="checkbox">
+                            @Html.CheckBoxFor(m => m.RememberMe)
+                            <p>Запомнить меня</p>                        
+                            @*@Html.LabelFor(m => m.RememberMe)*@
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="form-group">
+                    <div class="">
+                        <input type="submit" value="Войти" class="" style="font-size:15pt"/>
+                    </div>
+                </div>
+                <p>
+                    @Html.ActionLink("Создать аккаунт", "Register")
+                </p>
+
+                //Enable this once you have account confirmation enabled for password reset functionality
+                @*<p>
+                    @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                </p>*@
+            }
+
+        </div>
+    </div>
+
+@Scripts.Render("~/bundles/modernizr")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/jqueryval")
+
+</body>
+</html>
+
+
+@*<h2>@ViewBag.Title</h2>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <section id="loginForm">
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <h4>Введите свои данные для входа на сайт.</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label text-center" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Пароль" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12 text-center">
+                            <div class="checkbox text-center">
+                                @Html.CheckBoxFor(m => m.RememberMe, new { @class = "text-center"})
+                                @Html.LabelFor(m => m.RememberMe)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Войти" class="btn btn-success" />
+                        </div>
+                    </div>
+                    <p>
+                        @Html.ActionLink("Зарегистрироваться", "Register")
+                    </p>
+                    @* Enable this once you have account confirmation enabled for password reset functionality
+                        <p>
+                            @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                        </p>
+                }
+            </section>
+        </div>
+
+    </div>*@
+

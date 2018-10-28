@@ -1,0 +1,217 @@
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\roslyn\csc.exe
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\roslyn\System.Collections.Immutable.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\roslyn\vbc.exe
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\roslyn\VBCSCompiler.exe
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\roslyn\VBCSCompiler.exe.config
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\MyNotes.dll.config
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\MyNotes.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\MyNotes.pdb
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Antlr3.Runtime.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\EntityFramework.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\EntityFramework.SqlServer.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Google.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Web.Infrastructure.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Newtonsoft.Json.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Owin.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\System.Web.Helpers.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\System.Web.Mvc.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\System.Web.Optimization.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\System.Web.Razor.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\System.Web.WebPages.Deployment.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\System.Web.WebPages.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\System.Web.WebPages.Razor.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\WebGrease.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\System.Web.Helpers.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\System.Web.Mvc.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\System.Web.Optimization.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\System.Web.Razor.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\System.Web.WebPages.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\System.Web.WebPages.Deployment.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\System.Web.WebPages.Razor.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Antlr3.Runtime.pdb
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Newtonsoft.Json.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\EntityFramework.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\EntityFramework.SqlServer.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Google.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\obj\Debug\MyNotes.csprojResolveAssemblyReference.cache
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\obj\Debug\MyNotes.dll
+c:\users\иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\obj\Debug\MyNotes.pdb
+C:\Users\Иван\documents\visual studio 2015\Projects\MyNotes\MyNotes\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll
+C:\WebProjects\MyNotes\MyNotes\bin\roslyn\csc.exe
+C:\WebProjects\MyNotes\MyNotes\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\WebProjects\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\WebProjects\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\WebProjects\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\WebProjects\MyNotes\MyNotes\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\WebProjects\MyNotes\MyNotes\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\WebProjects\MyNotes\MyNotes\bin\roslyn\System.Collections.Immutable.dll
+C:\WebProjects\MyNotes\MyNotes\bin\roslyn\System.Reflection.Metadata.dll
+C:\WebProjects\MyNotes\MyNotes\bin\roslyn\vbc.exe
+C:\WebProjects\MyNotes\MyNotes\bin\roslyn\VBCSCompiler.exe
+C:\WebProjects\MyNotes\MyNotes\bin\roslyn\VBCSCompiler.exe.config
+C:\WebProjects\MyNotes\MyNotes\bin\MyNotes.dll.config
+C:\WebProjects\MyNotes\MyNotes\bin\MyNotes.dll
+C:\WebProjects\MyNotes\MyNotes\bin\MyNotes.pdb
+C:\WebProjects\MyNotes\MyNotes\bin\Antlr3.Runtime.dll
+C:\WebProjects\MyNotes\MyNotes\bin\EntityFramework.dll
+C:\WebProjects\MyNotes\MyNotes\bin\EntityFramework.SqlServer.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.Core.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Cookies.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Facebook.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Google.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.OAuth.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Twitter.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Web.Infrastructure.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Newtonsoft.Json.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Owin.dll
+C:\WebProjects\MyNotes\MyNotes\bin\System.Web.Helpers.dll
+C:\WebProjects\MyNotes\MyNotes\bin\System.Web.Mvc.dll
+C:\WebProjects\MyNotes\MyNotes\bin\System.Web.Optimization.dll
+C:\WebProjects\MyNotes\MyNotes\bin\System.Web.Razor.dll
+C:\WebProjects\MyNotes\MyNotes\bin\System.Web.WebPages.Deployment.dll
+C:\WebProjects\MyNotes\MyNotes\bin\System.Web.WebPages.dll
+C:\WebProjects\MyNotes\MyNotes\bin\System.Web.WebPages.Razor.dll
+C:\WebProjects\MyNotes\MyNotes\bin\WebGrease.dll
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\WebProjects\MyNotes\MyNotes\bin\System.Web.Helpers.xml
+C:\WebProjects\MyNotes\MyNotes\bin\System.Web.Mvc.xml
+C:\WebProjects\MyNotes\MyNotes\bin\System.Web.Optimization.xml
+C:\WebProjects\MyNotes\MyNotes\bin\System.Web.Razor.xml
+C:\WebProjects\MyNotes\MyNotes\bin\System.Web.WebPages.xml
+C:\WebProjects\MyNotes\MyNotes\bin\System.Web.WebPages.Deployment.xml
+C:\WebProjects\MyNotes\MyNotes\bin\System.Web.WebPages.Razor.xml
+C:\WebProjects\MyNotes\MyNotes\bin\Antlr3.Runtime.pdb
+C:\WebProjects\MyNotes\MyNotes\bin\Newtonsoft.Json.xml
+C:\WebProjects\MyNotes\MyNotes\bin\EntityFramework.xml
+C:\WebProjects\MyNotes\MyNotes\bin\EntityFramework.SqlServer.xml
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.Core.xml
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.xml
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.xml
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Facebook.xml
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Cookies.xml
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.OAuth.xml
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Google.xml
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Twitter.xml
+C:\WebProjects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\WebProjects\MyNotes\MyNotes\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll
+C:\WebProjects\MyNotes\MyNotes\obj\Debug\MyNotes.csprojResolveAssemblyReference.cache
+C:\WebProjects\MyNotes\MyNotes\obj\Debug\MyNotes.dll
+C:\WebProjects\MyNotes\MyNotes\obj\Debug\MyNotes.pdb
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\roslyn\csc.exe
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\roslyn\vbc.exe
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\roslyn\VBCSCompiler.exe
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\MyNotes.dll.config
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\MyNotes.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\MyNotes.pdb
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Antlr3.Runtime.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\EntityFramework.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\EntityFramework.SqlServer.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Newtonsoft.Json.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Owin.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\System.Web.Helpers.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\System.Web.Mvc.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\System.Web.Optimization.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\System.Web.Razor.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\System.Web.WebPages.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\System.Web.WebPages.Razor.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\WebGrease.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\System.Web.Helpers.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\System.Web.Mvc.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\System.Web.Optimization.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\System.Web.Razor.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\System.Web.WebPages.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\System.Web.WebPages.Razor.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Antlr3.Runtime.pdb
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Newtonsoft.Json.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\EntityFramework.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\EntityFramework.SqlServer.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\obj\Debug\MyNotes.csprojResolveAssemblyReference.cache
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\obj\Debug\MyNotes.dll
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\obj\Debug\MyNotes.pdb
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\obj\Debug\MyNotes.Migrations.InitialCreate.resources
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\obj\Debug\MyNotes.csproj.GenerateResource.Cache
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\obj\Debug\MyNotes.Migrations.MigrateDB.resources
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\obj\Debug\MyNotes.Migrations.MigrateDB2.resources
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\obj\Debug\MyNotes.Migrations.MigrateDB3.resources
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\obj\Debug\MyNotes.Migrations.MigrateDB4.resources
+C:\Users\Иван\Documents\Visual Studio Projects\MyNotes\MyNotes\obj\Debug\MyNotes.Migrations.MigrateDB5.resources

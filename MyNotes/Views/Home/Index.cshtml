@@ -1,0 +1,236 @@
+﻿@*@model IEnumerable<MyNotes.Models.Note>*@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyNotes</title>
+
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/font-awesome-4.6.3/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/foundation_icons_general_enclosed/stylesheets/general_enclosed_foundicons.css" rel="stylesheet" />
+    
+    <link href="~/Content/MainPage.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/jquery.nicescroll.min.js"></script>
+    <script src="~/Scripts/My_js.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        @* Колонка управления *@
+        <div id="col-work-panel">
+            <br />
+            <div style="text-align:center">
+                <div class="mask"></div>
+                <img src="~/Content/Images/user_anonymous.png" class="icon-work-panel" id="account-effect" title="АККАУНТ" />
+                <div id="account-window" style="">
+                    
+                    <div style="text-align:center">
+                        <br />
+                        <img src="~/Content/Images/user_unknown.png" style="width:80px; height:80px;" />
+                        <br />
+                        <hr class="light" />
+                        <div style="text-align:left; margin-left:0px">
+                            <button class="account-menu-btn" onclick="location.href='@Url.Action("Index", "Manage")'" style="text-align:left; margin-left:15px">
+                                <i class="fa fa-cogs" style="width:20px"></i> Настройки
+                            </button>
+                            @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <button class="account-menu-btn" onclick="javascript:document.getElementById('logoutForm').submit()" style="text-align:left; margin-left:15px">
+                                    <i class="fa fa-sign-out" style="width:20px"></i> Выход
+                                </button>
+                            }
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div><br><br><br></div>
+            <div style="text-align:center;">
+                <div style="text-align:center;">
+                    <i class="foundicon-add-doc icon-left-set" onclick="NewNote()" style="" title="Новая заметка"><br></i>
+                    <i class="foundicon-address-book icon-left-set" onclick="OpenFolderWindow()" title="Блокноты"></i>
+
+                </div>
+                <br />
+                <hr class="light3"/>
+                <i class="foundicon-refresh icon-left-set2" id="icon-all-search" onclick="AllSearch()" title="Показать все"><br></i>
+                <i class="foundicon-star icon-left-set2" id="icon-favourite-search" onclick="FavouriteSearch()" title="Показать избранные"><br></i>
+            </div>
+        </div>
+        
+        <div class="folder-window" style="position:absolute; display: none; width: 400px; height:100%; background:#fafafa; margin-left:70px;z-index:400">
+            <div class="folder-upper-block" style="height:100px; border-bottom:1px solid #c4c4c4;text-align:center;">
+                <h2 style="color: #898989;">БЛОКНОТЫ</h2>
+                @*<div style="float:left;">
+                    <input type="text" class="form-control" id="" style="margin-top:15px;margin-left:10px;height:25px;width:330px;" /> 
+                </div>*@
+                <h2 style="float:right; padding-right:20px;height:25px;"><span title="Создать новый блокнот" id="add-folder-icon" class="glyphicon glyphicon-book" style="font-size:25px;" onclick="ShowNewFolderDialog()"></span>@*<span class="glyphicon glyphicon-plus" style="font-size:15px;"></span>*@</h2>
+            
+            
+            
+                <!-- HTML-код модального окна добавления блокнота-->
+                <div id="myModal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Заголовок модального окна -->
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h3 class="modal-title">ДОБАВИТЬ БЛОКНОТ</h3>
+                            </div>
+                            <!-- Основное содержимое модального окна -->
+                            <div class="modal-body" style="text-align:center;">
+                                <p>Название нового блокнота</p>
+                                <input type="text" class="form-control" id="new-folder-name" style="width:100%;" />
+                                <div id="new-folder-err-message" style="color:red;display:none;">
+                                    @* вывод сообщения об ошибке *@
+                                    <p>Блокнот с таким именем уже существует...</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Футер модального окна -->
+                            <div class="modal-footer">
+                                @*<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>*@
+                                <button type="button" class="btn btn-warning" onclick="CreateNewFolder()">Добавить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+                <!-- HTML-код модального окна удаления блокнота-->
+                <div id="myModalDelete" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Заголовок модального окна -->
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h3 class="modal-title">Удалить БЛОКНОТ?</h3>
+                            </div>
+                            <!-- Основное содержимое модального окна -->
+                            <div class="modal-body" style="text-align:center;">
+                                <p>При удалении блокнота все имеющиеся в нем заметки будут перемещены в корзину...</p>
+                                @*<p>Название нового блокнота</p>
+                                <input type="text" class="form-control" id="new-folder-name" style="width:100%;" />
+                                <div id="new-folder-err-message" style="color:red;display:none;">
+                                    
+                                    <p>Блокнот с таким именем уже существует...</p>
+                                </div>*@
+                            </div>
+
+                            <!-- Футер модального окна -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-dismiss="modal">Отмена</button>
+                                <button type="button" class="btn btn-warning" onclick="DeleteFolder()">Удалить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+
+            
+            </div>
+            <div class="folder-bottom-block">
+                @* Здесь выводим список папок *@
+                @* GetFoldersListPartialView.cshtml *@
+            </div>
+            
+            
+
+        </div>
+
+        @* Колонка со списком заметок *@
+        <div id="col-note-list" style="">
+            <div id="col-note-list-upper-block">
+                <h2 style="color: #898989;">ЗАМЕТКИ</h2>
+                <input type="text" class="form-control" id="search-string" style="margin-top:-5px;margin-left:12px;height:26px;width:250px;"/>
+                <div style="margin-left:270px;margin-top:-29px;">
+                    <i class="foundicon-search icon-left-set2" id="icon-text-search1" onclick="TextSearch()" style="font-size:23px;" title="Поиск по имени заметки"></i>
+                </div>
+                @* Выпадающее меню сортировки *@
+                <div style="position:relative; margin-left:180px; top:0px;width:100px;z-index:1;">
+                    <div class="" id="sort-button" style="display:none;">
+                        <a class="" id="sort-list" data-toggle="dropdown" style="text-decoration:none;cursor:pointer;">
+                            <p style="color:#898989;font-size:13px;">Сортировка<i class="caret"></i></p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a id="method1" href="#" onclick="SortMethod1()">По дате создания (новые вверху) <span class="glyphicon glyphicon-ok"></span></a></li>
+                            <li><a id="method2" href="#" onclick="SortMethod2()">По дате создания (новые внизу) </a></li>
+                            <li class="divider"></li>
+                            <li><a id="method3" href="#" onclick="SortMethod3()">По алфавиту (А-Я) </a></li>
+                            <li><a id="method4" href="#" onclick="SortMethod4()">По алфавиту (Я-А) </a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div>
+                    <p id="number-of-notes" style="position:relative; color:#898989;font-size:13px;display:none;top:-29px;margin-left:12px;"></p>
+                </div>
+            </div>
+            <div id="col-note-list-bottom-block">
+                @* Сюда вставляем список заметок ajax *@
+                @* GetNotesListPartialView.cshtml *@
+            </div>
+        </div>
+
+        @* Колонка управления заметкой и редактирования/просмотра *@
+        <div id="col-note-edit" style="">
+            <div class="col-note-edit-upper-block" style="">
+                <div style="margin-top:15px;">
+                    <i class="foundicon-star icon-set" id="icon-favourite-note" onclick="SetFavourite()" title="Добавить в избранное"></i>
+                    @*<i class="fa fa-sticky-note icon-set" style="" title="Цветовая метка"></i>*@
+                    @*<i class="fa fa-info-circle icon-set" style="font-size:35px;" title="Инфо"></i>*@
+                    @*<i class="fa fa-search icon-set" style="" title="Поиск"></i>*@
+                </div>
+
+                <div>
+                    <i class="fa fa-trash-o trash" title="Удалить заметку" onclick="DeleteWindow()"></i>
+                    <div class="delete-window" style="text-align:center;">
+                        <p></p>
+                        <i class="fa fa-trash-o" style="font-size:60px;"></i>
+                        <hr class="light" />
+                        <h4>Удалить заметку?</h4>
+                        <p></p>
+                        <button class="bnt btn-danger my-btn" onclick="DeleteNote()">Удалить</button>
+                        &ensp;
+                        <button class="bnt btn-success my-btn" onclick="DeleteWindowHide()">Отмена</button>
+                    </div>
+                </div>
+
+                @* Переместить в блокнот *@
+                <div style="position:relative; margin-left:20px; top:10px;width:50px">
+                    <div class="" id="sort-button" style="">
+                        <a class="" id="sort-list" data-toggle="dropdown" onclick="GetFoldersDropDownMenu()" style="text-decoration:none;cursor:pointer;" title="Текущий блокнот / Переместить в">
+                            <p class="current-folder" style="color:#898989;font-size:13px;"></p>
+                        </a>
+                        <ul class="dropdown-menu" id="dropdown-menu2">
+                                                        
+                        </ul>
+
+                    </div>
+                </div>
+
+                
+            </div>
+            <div id="col-note-edit-area" style="">
+                <h2 class="note-title" style="" contenteditable="true" spellcheck="false"></h2>
+                @*<hr class="light2" />*@
+                <p class="note-body" style="" contenteditable="true" spellcheck="false"></p>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    @* HTML разметка для окна ввода новой заметки *@
+    @Html.Partial("NewNote")
+    
+       
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/bootstrap")
+    @* @RenderSection("scripts", required: false)*@
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿@model IEnumerable<MyNotes.Models.Folder>
+
+<div id="folder-list-item1" class="folder-list" onclick="SelectFolderAll()" data-folder-id="null">
+    <div style="font-size:15px;cursor:default;">
+        Все заметки
+    </div>
+</div>
+
+@foreach (var folder in Model)
+{
+    if (folder.FolderName == "Trash")
+    {
+        ViewBag.tr = folder.Id;
+        continue;
+    }
+
+        <div id="folder-list-item" class="folder-list" onclick="SelectFolder(this)" data-folder-cur="@folder.FolderCurrent" data-folder-id="@folder.Id" data-folder-name="@folder.FolderName">
+            <div onclick="ModalDeleteFolder(event)" data-folder-id="@folder.Id" title="Удалить блокнот">
+                <span style="float:right; color:#b1b1b1; cursor:pointer;" class="glyphicon glyphicon-trash" ></span>
+            </div>
+            <div style="font-size:15px; cursor:default">
+                @folder.FolderName
+                @if (folder.FolderCurrent == true)
+                {
+                    <span class="glyphicon glyphicon-ok"></span>
+                }
+                
+            </div>
+            
+
+            @*<div>
+                    <i style="font-size:11px;">@folder.Id</i>
+                </div>*@
+            @*<div class="col-note-title-length">
+                    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                </div>*@
+        </div>
+        
+}
+
+<div id="folder-list-item2" class="folder-list" onclick="SelectFolderTrash(this)" data-folder-id="@ViewBag.tr" data-folder-name="Trash">
+    <div style="font-size:15px;cursor:default;">
+        Корзина <span class="glyphicon glyphicon-trash" style="font-size:15px;"></span>
+    </div>
+</div>
+
+
+<style>
+    #folder-list-item {
+        border-bottom: 1px solid #f1f1f1;
+        height: 40px;
+        padding: 10px;
+        background: #fefefe;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #585858;
+        /*vertical-align: middle;*/
+    }
+    
+    
+    
+    #folder-list-item:hover {
+        color: #161616;
+        background: #ffac00;
+    }
+
+    /*#folder-list-item:hover #folder-delete-icon {
+        display: block;
+        color: #161616;
+        background: #ff0000;
+    }*/
+
+    
+
+    #folder-list-item1 {
+        border-bottom: 1px solid #f1f1f1;
+        height: 40px;
+        padding: 10px;
+        background: #f8ffa0;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #585858;
+        /*vertical-align: middle;*/
+    }
+
+    #folder-list-item1:hover {
+        color: #161616;
+        background: #ffac00;
+    }
+
+    #folder-list-item2 {
+        border-bottom: 1px solid #f1f1f1;
+        height: 40px;
+        padding: 10px;
+        background: #ff9d9d;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #585858;
+        /*vertical-align: middle;*/
+    }
+
+    #folder-list-item2:hover {
+        color: #161616;
+        background: #ffac00;
+    }
+</style>

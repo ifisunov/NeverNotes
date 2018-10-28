@@ -1,0 +1,10 @@
+﻿@model IEnumerable<MyNotes.Models.Folder>
+
+
+@foreach (var folder in Model)
+{
+
+    <li><a id="" href="#" onclick="SelectCurrentFolderForSave(this)" data-folderId="@folder.Id" data-folderName="@folder.FolderName">@folder.FolderName</a></li>
+
+
+}

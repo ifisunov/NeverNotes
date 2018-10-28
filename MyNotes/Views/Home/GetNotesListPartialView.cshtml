@@ -1,0 +1,23 @@
+﻿@model IEnumerable<MyNotes.Models.Note>
+
+
+    @foreach (var note in Model)
+    {
+        
+        <div id="col-note-list-item" class="notes-list" onclick="SelectNote(this)" data-note-id="@note.Id" style="overflow:hidden">
+            <div class="col-note-list-item-name" style="font-weight:600;font-size:15px;cursor:default;">
+                @note.Title
+            </div>
+            <div>
+                <i style="font-size:11px;cursor:default">@note.DateOfCreation</i>
+            </div>
+            <div class="col-note-title-length">
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+            </div>
+            
+        </div>
+        
+    }
+
+
+

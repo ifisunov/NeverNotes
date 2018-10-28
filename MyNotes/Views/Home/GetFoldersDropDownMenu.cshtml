@@ -1,0 +1,10 @@
+﻿@model IEnumerable<MyNotes.Models.Folder>
+
+
+@foreach (var folder in Model)
+{
+    
+        <li><a id="" href="#" onclick="MoveToFolder(this)" data-folderId="@folder.Id">@folder.FolderName</a></li>
+    
+    
+}

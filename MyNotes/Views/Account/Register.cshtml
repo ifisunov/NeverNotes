@@ -1,0 +1,128 @@
+﻿@model MyNotes.Models.RegisterViewModel
+@{
+    Layout = null;
+    ViewBag.Title = "My Notes - Registration";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/LogRegPage.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    @Scripts.Render("~/bundles/jquery")
+    <script>
+        $(document).ready(function () {
+            $("#child").fadeIn("slow");
+        });
+    </script>
+</head>
+
+<body>
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { role = "form" }))
+    {
+                
+        <div id="parent-reg">
+            <div id="child" style="display: none">
+                <h2>НОВЫЙ АККАУНТ</h2>
+                @Html.AntiForgeryToken()
+                <hr />
+                @Html.ValidationSummary("", new { @class = "text-danger text-left", @style = "font-size: 11pt" })
+                
+                <div class="form-group text-left">
+                    @*@Html.LabelFor(m => m.Name, new { @class = "col-md-2 control-label" })*@
+                    <p>Как Вас зовут</p>
+                    <div class="">
+                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @placeholder = "Ваше имя" })
+                    </div>
+                </div>
+                <div class="form-group text-left">
+                    @*@Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })*@
+                    <p>Ваш e-mail адрес</p>
+                    <div class="">
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "E-mail" })
+                    </div>
+                </div>
+                <div class="form-group text-left">
+                    @*@Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })*@
+                    <p>Придумайте пароль</p>
+                    <div class="">
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group text-left">
+                    @*@Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })*@
+                    <p>Повторите, на всякий случай</p>
+                    <div class="">
+                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                    </div>
+                </div>
+                <hr/>
+                <div class="form-group">
+                    <div class="">
+                        <input type="submit" class="" value="Создать аккаунт" style="font-size:15pt" />
+                    </div>
+                </div>
+                <p>
+                    @Html.ActionLink("У меня есть аккаунт", "Login")
+                </p>
+
+
+
+            </div>
+        </div>
+    }
+
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryval")
+</body>
+</html>
+
+
+@*<h2>@ViewBag.Title</h2>
+
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        <h4>Регистрация нового пользователя.</h4>
+        <hr />
+        @Html.ValidationSummary("", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Name, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-primary" value="Зарегистрировать" />
+            </div>
+        </div>
+    }
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }*@
